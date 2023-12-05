@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.navblind.R
 
 
 class SplashScreen : AppCompatActivity() {

@@ -6,7 +6,6 @@ import android.speech.tts.TextToSpeech
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.navblind.R
 import java.util.*
 
 class HomeActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
@@ -43,8 +42,7 @@ class HomeActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         parametre.setOnClickListener {
             speakText("Parametre")
-            val intent = Intent(this@HomeActivity, Setting::class.java)
-            startActivity(intent)
+
         }
 
         navigate.setOnClickListener {
