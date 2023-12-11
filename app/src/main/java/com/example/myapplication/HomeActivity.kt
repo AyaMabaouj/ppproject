@@ -36,7 +36,7 @@ class HomeActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         texts.setOnClickListener {
             speakText("Text to speech")
-            val intent = Intent(this@HomeActivity, LireText::class.java)
+            val intent = Intent(this@HomeActivity, TextToSpeechActivity::class.java)
             startActivity(intent)
         }
 
@@ -47,7 +47,7 @@ class HomeActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         navigate.setOnClickListener {
             speakText("Navigation")
-            val intent = Intent(this@HomeActivity, Navigation::class.java)
+            val intent = Intent(this@HomeActivity, Map::class.java)
             startActivity(intent)
         }
         vocale.setOnClickListener {

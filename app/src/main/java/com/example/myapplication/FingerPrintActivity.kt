@@ -24,18 +24,18 @@ class FingerPrintActivity : AppCompatActivity() {
         val biometricManager = BiometricManager.from(this)
         when (biometricManager.canAuthenticate()) {
             BiometricManager.BIOMETRIC_SUCCESS -> {
-                msgtex.text = "You can use the fingerprint sensor to login"
+                msgtex.text = "Vous pouvez utiliser le capteur d'empreintes digitales pour vous connecter"
                 msgtex.setTextColor(Color.parseColor("#fafafa"))
             }
 
             BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE -> msgtex.text =
-                "This device does not have a fingerprint sensor"
+                "Cet appareil n'a pas de capteur d'empreintes digitales"
 
             BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE -> msgtex.text =
-                "The biometric sensor is currently unavailable"
+                "Le capteur biométrique est actuellement indisponible"
 
             BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> msgtex.text =
-                "Your device doesn't have a fingerprint saved, please check your security settings"
+                "Aucune empreinte digitale n'est enregistrée sur votre appareil, veuillez vérifier vos paramètres de sécurité"
         }
 
         //Créer une variable pour notre exécuteur
@@ -78,4 +78,5 @@ class FingerPrintActivity : AppCompatActivity() {
         //Déclenchez l'authentification dès le démarrage de l'activité
         biometricPrompt.authenticate(promptInfo)
     }
+
 }

@@ -90,6 +90,7 @@ lateinit var textToSpeech: TextToSpeech
                 processImageAndSpeak()
             }
             private fun speakText(objectName: String) {
+
                 val currentTime = System.currentTimeMillis()
 
                 if (currentTime - lastSpeakTime > 1000) {
@@ -97,7 +98,7 @@ lateinit var textToSpeech: TextToSpeech
                     lastSpeakTime = currentTime
                 }
             }
-            private fun processImageAndSpeak() {
+              fun processImageAndSpeak() {
                 bitmap = textureView.bitmap!!
                 var image = TensorImage.fromBitmap(bitmap)
                 image = imageProcessor.process(image)

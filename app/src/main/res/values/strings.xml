@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">NavBlind</string>
     <string name="title_activity_setting">Setting</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="google_map_api_key">AIzaSyDDMZYo0WT4tG8_NPZeWqbnKLKwCrQLKlA</string>
 </resources>
