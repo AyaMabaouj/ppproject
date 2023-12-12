@@ -57,6 +57,8 @@ dependencies {
 
     implementation("androidx.test.ext:junit-ktx:1.1.5")
     implementation("com.google.ar:core:1.41.0")
+    implementation("androidx.core:core-ktx:+")
+    implementation("androidx.core:core-ktx:+")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -82,6 +84,7 @@ dependencies {
     implementation("com.google.android.gms:play-services-mlkit-language-id:17.0.0")
     implementation("com.google.mlkit:language-id:17.0.4")
     implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
+    implementation ("androidx.media:media:1.4.1")
 
     implementation("androidx.camera:camera-camera2:1.4.0-alpha02")
     implementation("androidx.camera:camera-lifecycle:1.4.0-alpha02")

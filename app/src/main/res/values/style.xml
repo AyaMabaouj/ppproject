@@ -7,4 +7,10 @@
         <item name="strokeWidth">2dp</item>
         <item name="strokeColor" >#78d9ff</item>
     </style>
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="closeIcon">@drawable/ic_close</item>
+        <item name="searchIcon">@null</item> <!-- Cache l'icône de recherche standard -->
+        <item name="android:goIcon">@drawable/ic_search</item> <!-- Icône de recherche -->
+        <item name="android:voiceIcon">@null</item> <!-- Cache l'icône de recherche vocale standard -->
+    </style>
 </resources>
